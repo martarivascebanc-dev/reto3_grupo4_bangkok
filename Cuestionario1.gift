@@ -1,0 +1,69 @@
+1- ¿Qué modelo utilizarías pra proyectos cuyos requisitos son estables? {
+    =Cascada
+    ~Iterativo incremental
+    ~En espiral
+    ~Ninguno de ellos
+}
+
+2- ¿Cuál es la diferenccia del modelo en espiral con el modelo iterativo incremental? {
+    ~El modelo en espiral es un modelo evolutivo y el modelo iterativo incremental es un modedlo en cascada.
+    =En el modelo en espiral, en cada ciclo se tiene en cuenta el análisis de riesgos.
+    ~El modelo iterativo invremental es un modelo evolutivo y el modelo en espiral es un modelo en cascada.
+    ~En el modelo en espiral no hay planificación.
+}
+
+3- ¿Qué modelo reduce riesgos? {
+    ~-Cascada.
+    ~Iterativo incremental.
+    =En espiral.
+    ~Todos.
+}
+
+4- ¿Con qué modelo es difícil evaluar los riesgos? {
+    ~Cascada.
+    ~Iterativo incremental.
+    =En espiral.
+    ~Todos.
+}
+
+5- ¿Qué modelo es recomendable cuando se están probando nuevas tecnologías? {
+    ~Cascada.
+    =Iterativo incremental.
+    ~En espiral.
+    ~Todos.
+}
+
+6- ¿Qué modelo no es recomendable para el desarrollo de sistemas en tiempo real? {
+    =Cascada.
+    ~Iterativo incremental.
+    ~En espiral.
+    ~Todos.
+}
+
+7- ¿Cuál es un inconveniente del modelo en espiral? {
+    =El costo del proyecto aumenta a medida que la espiral pasa por sucesivas iteraciones.
+    ~No se debe usar para sistemas con alto índice de riesgos.
+    ~No se debe usar para sistemas de alto nivel de seguridad.
+    ~Todas las opciones son inconvenientes del modelo en espiraral.
+}
+
+8- ¿Qué modelo es fácil de comprender, planificar y seguir? {
+    =Cascada.
+    ~Iterativo incremental.
+    ~En espiral.
+    ~Todos.
+}
+
+9- ¿En qué modelo las entregas facilitan la realimentación de los próximos entregables? {
+    ~Cascada.
+    =Iterativo inccremental.
+    ~En espiral.
+    ~Todos.
+}
+
+10- ¿Qué tipo de requisitos tratan las características del sistema, como por ejemplo la fiabilidad? {
+    ~Requisitos funcionales.
+    =Requisitos no funcionales.
+    ~Requisitos de información.
+    ~Restricciones.
+}

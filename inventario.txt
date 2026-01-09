@@ -1,0 +1,4 @@
+id_componente, nombre, cantidad, fecha_entrada, estado
+1001, Tornillo, 500, 2026-01-09, bueno
+1002, Motor, 10, 2026-01-09, defectuoso
+1003, Resistor, 200, 2026-01-09, bueno

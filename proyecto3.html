@@ -208,7 +208,7 @@
 <nav>
     <a href="#proyecto">Proyecto</a>
     <a href="#funcionamiento">Funcionamiento</a>
-    <a href="#animación">Animación</a>
+    <a href="#animacion">Animación</a>
     <a href="#contacto">Contact</a>
     <a href="animacion.html">Animación Marta</a>
     <a href="animacionmarko.html">Animación Marko</a>
@@ -360,6 +360,14 @@
             e.preventDefault();
             const seccion = document.querySelector(this.getAttribute('href'));
             seccion.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    document.querySelectorAll('nav a').forEach(enlace => {
+        enlace.addEventListener('click', e => {
+            e.preventDefault();
+            const url = enlace.getAttribute('href');
+            window.location.href = url;
         });
     });
 </script>

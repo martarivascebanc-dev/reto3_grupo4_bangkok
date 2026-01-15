@@ -2,39 +2,45 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Fabricados López | Trazabilidad y RRHH</title>
+    <title>Fabricados López</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Reset básico */
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #eef2f5;
-            color: #333;
+        /* Reseteo básico para que no haya márgenes raros */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
+        /* Cabecera de la página */
         header {
-            background-color: #1f2a36;
+            background-color: #2c3e50;
             color: white;
-            padding: 40px 20px;
+            padding: 30px;
             text-align: center;
         }
 
 
         header h1 {
-            font-size: 2.2em;
+            font-size: 2em;
             margin-bottom: 10px;
         }
 
 
+        /* Menú de navegación */
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #2c3e50;
+            background-color: #34495e;
             padding: 10px;
+            text-align: center;
         }
 
 
@@ -43,7 +49,6 @@
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
-            transition: color 0.3s;
         }
 
 
@@ -52,97 +57,142 @@
         }
 
 
+        /* Contenedor para centrar todo */
         .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
         }
 
 
+        /* Cada sección de la página */
         section {
-            background-color: white;
-            border-radius: 8px;
+            background: white;
             padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
 
         section h2 {
-            color: #1f2a36;
+            color: #2c3e50;
             margin-bottom: 15px;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 8px;
         }
 
 
         section p {
-            line-height: 1.6;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
 
-        /* Mini test RRHH */
-        .test label {
-            display: block;
-            padding: 6px 0;
-            cursor: pointer;
-        }
-
-
-        .test input[type="radio"] {
-            margin-right: 10px;
-        }
-
-
-        button {
-            background-color: #1f2a36;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
+        ul {
+            margin-left: 25px;
             margin-top: 10px;
         }
 
 
-        button:hover {
-            background-color: #34495e;
+        ul li {
+            margin-bottom: 8px;
         }
 
 
-        /* Contacto */
+        .animacion-piezas {
+            background-color: #3498db;
+            height: 150px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+
+        /* Estilo de cada pieza (círculos naranjas) */
+        .pieza {
+            width: 50px;
+            height: 50px;
+            background-color: #f39c12;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            animation: girar 2s infinite linear;
+        }
+
+
+        /* Animación para que las piezas giren */
+        @keyframes girar {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+
+        /* Campos del formulario */
         form input, form textarea {
             width: 100%;
             padding: 10px;
             margin: 8px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+
+        /* Botón de enviar */
+        button {
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+
+        button:hover {
+            background-color: #e67e22;
+        }
+
+
+        .mensaje-exito {
+            background-color: #2ecc71;
+            color: white;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 15px;
+            display: none;
         }
 
 
         footer {
-            background-color: #1f2a36;
+            background-color: #2c3e50;
             color: white;
             text-align: center;
-            padding: 15px;
-            font-size: 14px;
-        }
-
-
-        /* Visual extra */
-        .highlight {
-            color: #f39c12;
-            font-weight: bold;
-        }
-
-
-        .section-box {
             padding: 20px;
-            background-color: #f9fafc;
-            border-radius: 6px;
-            margin-bottom: 15px;
+            margin-top: 30px;
         }
 
 
+        /* Ajustes para móviles */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.5em; }
+            nav a { display: block; margin: 5px 0; }
+            .pieza { width: 40px; height: 40px; font-size: 20px; }
+        }
     </style>
 </head>
 <body>
@@ -150,192 +200,169 @@
 
 <header>
     <h1>Fabricados López</h1>
-    <p>Control y trazabilidad de piezas industriales</p>
+    <p>Sistema de Trazabilidad de Piezas</p>
 </header>
 
 
+<!-- ===== MENÚ ===== -->
 <nav>
     <a href="#proyecto">Proyecto</a>
-    <a href="#rrhh">RRHH Test</a>
-    <a href="#contact">Contact</a>
-    <a href="animacion.html">Animacion</a>
+    <a href="#funcionamiento">Funcionamiento</a>
+    <a href="#animación">Animación</a>
+    <a href="#contacto">Contact</a>
+
+
 </nav>
 
 
+<!-- ===== CONTENIDO PRINCIPAL ===== -->
 <div class="container">
 
 
+    <!-- ===== SECCIÓN: PROYECTO ===== -->
     <section id="proyecto">
-        <h2>Descripción del Proyecto</h2>
+        <h2>El Proyecto</h2>
+
         <p>
-            Esta página web complementa el proyecto de **control y trazabilidad de piezas**.
-            Permite a los usuarios entender cómo funciona el sistema, la importancia de registrar cada pieza correctamente
-            y conocer datos generales sobre la empresa <span class="highlight">Fabricados López</span>.
+            Este proyecto es un sistema para llevar control de las piezas que se fabrican
+            en la empresa Fabricados López.
         </p>
+
         <p>
-            El objetivo principal es asegurar la calidad, facilitar la gestión de producción y preparar la base para futuras mejoras
-            como la implementación de una base de datos real.
+            Antes todo se apuntaba en papel, lo que hacía difícil encontrar información.
+            Ahora tenemos un programa en Python que guarda todo de forma ordenada.
         </p>
+
+
+        <h3>Que resuelve?</h3>
+        <ul>
+            <li>Ya no hay que buscar entre papeles</li>
+            <li>Todo está en un solo sitio</li>
+            <li>Se sabe quién fabricó cada pieza y cuándo</li>
+            <li>Es fácil ver si una pieza está bien o defectuosa</li>
+        </ul>
     </section>
 
 
-    <section id="rrhh" class="test">
-        <h2>Mini Test de Recursos Humanos (Empleabilidad)</h2>
+    <!-- ===== SECCIÓN: FUNCIONAMIENTO ===== -->
+    <section id="funcionamiento">
+        <h2>Como Funciona</h2>
+
         <p>
-            Este test está pensado para evaluar conocimientos y actitudes importantes en el entorno laboral.
-            Selecciona la opción que consideres correcta en cada pregunta.
+            Es un programa de consola muy simple en Python. Tiene tres funciones principales:
         </p>
 
 
-        <div class="section-box">
-            <form>
-                <p><strong>1. ¿Cuál de estas habilidades es más importante en un equipo de trabajo?</strong></p>
-                <label><input type="radio" name="q1"> Comunicación efectiva</label>
-                <label><input type="radio" name="q1"> Puntualidad</label>
-                <label><input type="radio" name="q1"> Responsabilidad individual</label>
+        <h3>Funciones:</h3>
+        <ul>
+            <li><strong>Añadir pieza:</strong> Se introducen los datos (ID, operario, fecha, tipo, estado)</li>
+            <li><strong>Ver todas las piezas:</strong> Muestra una lista completa</li>
+            <li><strong>Buscar por ID:</strong> Busca una pieza concreta por su código</li>
+        </ul>
 
 
-                <p><strong>2. ¿Qué actitud ayuda más al crecimiento profesional?</strong></p>
-                <label><input type="radio" name="q2"> Proactividad</label>
-                <label><input type="radio" name="q2"> Esperar instrucciones</label>
-                <label><input type="radio" name="q2"> Evitar riesgos</label>
+        <h3>Tecnología:</h3>
+        <ul>
+            <li>Python (lenguaje de programación)</li>
+            <li>CSV (archivos para guardar datos)</li>
+            <li>HTML y CSS (esta página web)</li>
+        </ul>
+    </section>
 
 
-                <p><strong>3. ¿Qué factor es clave para adaptarse a cambios en la empresa?</strong></p>
-                <label><input type="radio" name="q3"> Flexibilidad</label>
-                <label><input type="radio" name="q3"> Rigidez</label>
-                <label><input type="radio" name="q3"> Resistencia al cambio</label>
+    <!-- ===== SECCIÓN: ANIMACIÓN ===== -->
+    <section id="animacion">
+        <h2>Animación de Piezas</h2>
+
+        <p>
+            Estas piezas representan el trabajo en la fábrica.
+            Giran continuamente como si estuvieran en producción.
+        </p>
 
 
-                <button type="button">Enviar Respuestas</button>
-            </form>
+        <!-- Aquí van las piezas animadas -->
+        <div class="animacion-piezas">
+            <div class="pieza">🔩</div>
+            <div class="pieza">⚙️</div>
+            <div class="pieza">🛞</div>
+            <div class="pieza">⚙️</div>
         </div>
     </section>
 
 
-    <section id="contact">
-        <h2>Contact Us (Formulario en inglés)</h2>
-        <p>
-            Use this form to send us your questions or comments. We will respond as soon as possible.
-        </p>
+    <!-- ===== SECCIÓN: CONTACTO ===== -->
+    <section id="contacto">
+        <h2>Contact</h2>
+
+        <p>If you have any questions about the project, fill out this form:</p>
 
 
-        <div class="section-box">
-            <form>
-                <label>Name:</label>
-                <input type="text" placeholder="Your full name" required>
+        <form id="formulario">
+            <label>Name:</label>
+            <input type="text" id="nombre" placeholder="Your name" required>
 
 
-                <label>Email:</label>
-                <input type="email" placeholder="Your email address" required>
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="your@gmail.com" required>
 
 
-                <label>Subject:</label>
-                <input type="text" placeholder="Subject of your message">
+            <label>Message:</label>
+            <textarea id="mensaje" rows="4" placeholder="Write your message here..." required></textarea>
 
 
-                <label>Message:</label>
-                <textarea rows="5" placeholder="Write your message here..." required></textarea>
+            <button type="button" onclick="enviar()">Send Message</button>
+        </form>
 
-
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
+        <!-- Mensaje que aparece al enviar -->
+        <div id="confirmacion" class="mensaje-exito"></div>
     </section>
 
 
 </div>
 
 
+<!-- ===== PIE DE PÁGINA ===== -->
 <footer>
-    <p>Fabricados López | Grupo 4</p>
+    <p>© 2024 Fabricados López</p>
 </footer>
 
 
-<section id="animacion">
-    <h2>Animación de Piezas de Coche</h2>
-    <p>
-        Esta animación muestra de forma visual algunas piezas de un coche en movimiento: tuercas, ruedas y engranajes girando.
-        Representa la mecánica de la producción y la trazabilidad de las piezas.
-    </p>
+// JavaScript
+<script>
+    // Función que se ejecuta cuando pulsas el botón de enviar
+    function enviar() {
+        // Cogemos los valores que ha escrito el usuario
+        const nombre = document.getElementById('nombre').value;
+        const email = document.getElementById('email').value;
+        const mensaje = document.getElementById('mensaje').value;
+
+        // Si falta algo, mostramos un aviso
+        if (!nombre || !email || !mensaje) {
+            alert('Please fill in all fields');
+            return;
+        }
+
+        // Mostramos el mensaje de que se ha enviado
+        const confirmacion = document.getElementById('confirmacion');
+        confirmacion.style.display = 'block';
+        confirmacion.innerHTML = '<strong>✓ Message sent successfully</strong><br>Thank you ' + nombre + ', we will reply soon.';
+
+        // Borramos lo que había escrito en el formulario
+        document.getElementById('formulario').reset();
+    }
 
 
-
-
-    <div class="animacion-piezas">
-        <div class="pieza tuerca"></div>
-        <div class="pieza rueda"></div>
-        <div class="pieza engranaje"></div>
-        <div class="pieza tuerca"></div>
-        <div class="pieza engranaje"></div>
-    </div>
-</section>
-
-
-
-
-<style>
-.animacion-piezas {
-    position: relative;
-    height: 200px;
-    background: linear-gradient(120deg, #eef2f5, #dce1e7);
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-}
-
-
-
-
-.pieza {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #f39c12;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    color: white;
-    font-size: 14px;
-    animation: girar 4s linear infinite;
-}
-
-
-
-
-/* Diferentes tipos de piezas */
-.tuerca::after {
-    content: "🔩";
-    font-size: 24px;
-}
-.rueda::after {
-    content: "🛞";
-    font-size: 28px;
-}
-.engranaje::after {
-    content: "⚙️";
-    font-size: 28px;
-}
-
-
-
-
-/* Animación de giro */
-@keyframes girar {
-    0% { transform: rotate(0deg) translateY(0px); }
-    25% { transform: rotate(90deg) translateY(-10px); }
-    50% { transform: rotate(180deg) translateY(0px); }
-    75% { transform: rotate(270deg) translateY(10px); }
-    100% { transform: rotate(360deg) translateY(0px); }
-}
-</style>
-
-
+    // Cuando haces clic en el menú, la página baja suavemente
+    document.querySelectorAll('nav a').forEach(function(enlace) {
+        enlace.addEventListener('click', function(e) {
+            e.preventDefault();
+            const seccion = document.querySelector(this.getAttribute('href'));
+            seccion.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
 
 
 </body>
 </html>
+

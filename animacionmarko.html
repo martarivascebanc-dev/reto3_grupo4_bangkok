@@ -7,7 +7,8 @@
             margin: 0;
             background: #2a2a2a;
         }
-            #cinta {
+        
+        #cinta {
             position: absolute;
             bottom: 200px;
             width: 100%;
@@ -16,7 +17,7 @@
             border-top: 4px solid #777;
             border-bottom: 4px solid #777;
         }
-
+        
         #coche {
             position: absolute;
             bottom: 180px;
@@ -26,7 +27,7 @@
             background: red;
             border-radius: 5px;
         }
-
+        
         #techo {
             position: absolute;
             top: -15px;
@@ -36,7 +37,7 @@
             background: red;
             border-radius: 3px;
         }
-
+        
         .rueda {
             position: absolute;
             bottom: -8px;
@@ -45,32 +46,35 @@
             background: black;
             border-radius: 50%;
         }
-
+        
         #rueda1 { left: 10px; }
         #rueda2 { right: 10px; }
     </style>
 </head>
 <body>
     <div id="cinta"></div>
-
+    
     <div id="coche">
         <div id="techo"></div>
         <div class="rueda" id="rueda1"></div>
         <div class="rueda" id="rueda2"></div>
     </div>
-
-
+    
     <script>
+        // he usado position absolute para colocar el coche y la cinta donde queria
         var coche = document.getElementById('coche');
         var posicion = 100;
-    
+        
+        // el setInterval mueve el coche cada 20ms sumando 5px a la posicion
         setInterval(function() {
             posicion += 5;
             if (posicion > window.innerWidth) {
-                posicion = -100;
+                posicion = -100; // vuelve a empezar cuando sale de la pantalla
             }
             coche.style.left = posicion + 'px';
         }, 20);
+        
+        // las ruedas son circulares por el border-radius al 50%
     </script>
 </body>
 </html>

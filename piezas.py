@@ -1,3 +1,4 @@
+#
 import random
 #en un archivo guarda el stock de todas las piezas de los coches
 with open ("piezas.txt", "r") as f:

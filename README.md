@@ -1,21 +1,21 @@
 # Resumen
-En este repositorio vas a encontrar nuestra solución a los problemas de cada uno de los puestos de trabajo de nuestros empleados.
 
-## Javier - Responsable de sistemas
-Javier se va a encontrar con una base de datos en la que hemos descrito todas las entidades, atributos, relaciones y cardinalidades. También hemos definido nuestros objetivos para una industria 4.0.
+En este repositorio se recoge la solución global a los distintos retos asociados a cada uno de los puestos de trabajo de la empresa, dentro de un contexto de transformación digital e industria 4.0.
 
-## Pablo - Supervisadora de producción
-Pablo se va a encontrar la base de datos que pide Javier, con programas de Python que tiene un registro de las piezas de cada coche y otra base de datos gestionada por sqlite3. Como puedes navegar en la nube.
+## Javier – Responsable de Sistemas  
+Javier dispone de una base de datos en la que se han definido todas las entidades, atributos, relaciones y cardinalidades del sistema. Además, se han establecido los principales objetivos tecnológicos orientados a una industria 4.0.
 
-## Lucía - Ingeniera de procesos
-Lucía se va a encontrar las diferentes animaciones que hemos creado y la que hemos elegido se puede ver fácilmente los componentes que se añaden. 
+## Pablo – Supervisor de Producción  
+Pablo trabaja con la base de datos diseñada por Javier, junto con varios programas desarrollados en Python que permiten llevar un registro detallado de las piezas de cada vehículo. Asimismo, se utiliza otra base de datos gestionada mediante **SQLite3**, accesible desde la nube.
 
-## Mari Carmen - Directora de recursos humanos
-Mari Carmen se va a encontrar un juego de Kahoot de preguntas sobre contratos de trabajo, la seguridad social, relaciones laborales, estatuto del trabajador.
+## Lucía – Ingeniera de Procesos  
+Lucía cuenta con diferentes animaciones que representan los procesos productivos. En la animación seleccionada se pueden visualizar claramente los componentes que se van incorporando durante el proceso de fabricación.
 
-## Ohian - Responsable de digitalización y sostenibilidad
-Ohian se va a encontrar información sobre la nube, la ciberdelincuencia y el Big Data.
+## Mari Carmen – Directora de Recursos Humanos  
+Mari Carmen dispone de un juego interactivo en **Kahoot** con preguntas relacionadas con contratos de trabajo, Seguridad Social, relaciones laborales y el Estatuto de los Trabajadores.
 
-## Alain - Responsable comercial
+## Ohian – Responsable de Digitalización y Sostenibilidad  
+Ohian gestiona información clave sobre la computación en la nube, la ciberdelincuencia y el Big Data, enfocada a la mejora de la digitalización y la sostenibilidad empresarial.
 
-Alain se va a encontrar un podcast resumiendo el reto y una serie de preguntas frecuentes que hacen los clientes. 
+## Alain – Responsable Comercial  
+Alain cuenta con un podcast que resume el reto del proyecto y una sección de preguntas frecuentes (FAQ) que recogen las dudas más habituales de los clientes.

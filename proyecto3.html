@@ -234,6 +234,23 @@
             transition: opacity 0.5s ease;
         }
 
+        /* Caja destacada para el concurso */
+        .caja-destacada {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .caja-destacada h3 {
+            color: #fff;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
         /* Ajustes para móviles */
         @media (max-width: 768px) {
             header h1 { font-size: 1.5em; }
@@ -261,6 +278,7 @@
     <a href="#kahoot">Kahoot</a>
     <a href="#animacion">Animación</a>
     <a href="#animacion-coche">Fabricación</a>
+    <a href="#concurso">Concurso</a>
     <a href="#contacto">Contact</a>
 </nav>
 
@@ -426,6 +444,44 @@
             <button onclick="addSpoiler()">Añadir alerón</button>
             <button onclick="resetCar()">Reiniciar</button>
         </div>
+    </section>
+
+    <!-- ===== SECCIÓN: CONCURSO DE ANIMACIONES ===== -->
+    <section id="concurso">
+        <h2>🏆 Concurso de Animaciones</h2>
+        
+        <p>
+            Como parte de nuestro proyecto, participamos en un concurso de animaciones web donde cada miembro del equipo tenía que desarrollar una propuesta creativa que representara algún aspecto de la industria manufacturera.
+        </p>
+
+        <div class="caja-destacada">
+            <h3>🎨 Nuestra Propuesta Ganadora</h3>
+            <p>
+                Tras evaluar todas las propuestas del equipo, seleccionamos la animación del <strong>Proceso de Fabricación de Coches</strong> como nuestra entrada al concurso.
+            </p>
+        </div>
+
+        <h3>¿Por qué elegimos esta animación?</h3>
+        <ul>
+            <li><strong>Representación visual clara:</strong> La animación muestra de forma sencilla y visual el proceso de ensamblaje de un vehículo, algo que cualquier persona puede entender de inmediato.</li>
+            
+            <li><strong>Interactividad:</strong> A diferencia de una animación pasiva, esta permite al usuario participar activamente en el proceso de fabricación mediante botones interactivos, lo que hace la experiencia más educativa y entretenida.</li>
+            
+            <li><strong>Conexión con nuestro proyecto:</strong> Se alinea perfectamente con el objetivo principal de Fabricados López, que es la trazabilidad y control de piezas en procesos industriales. Cada paso de la animación representa una fase del proceso productivo que necesita ser registrada y controlada.</li>
+            
+            <li><strong>Simplicidad técnica y elegancia:</strong> La animación utiliza CSS y JavaScript de forma eficiente, demostrando que no hace falta complicar demasiado las cosas para crear algo efectivo y atractivo.</li>
+            
+            <li><strong>Valor educativo:</strong> Sirve como herramienta didáctica para explicar conceptos de manufactura secuencial y ensamblaje por etapas, algo fundamental en la industria automotriz.</li>
+        </ul>
+
+        <h3>El autor</h3>
+        <p>
+            Esta animación fue desarrollada por uno de los integrantes de nuestro equipo, quien demostró creatividad y habilidades técnicas al combinar HTML, CSS y JavaScript para crear una experiencia visual interactiva que representa fielmente los valores de nuestra empresa.
+        </p>
+
+        <p style="margin-top: 20px; font-style: italic; color: #555;">
+            La animación ha sido muy bien recibida por su capacidad de transmitir conceptos complejos de fabricación de una manera accesible y visual, además de reflejar el espíritu innovador y tecnológico de Fabricados López.
+        </p>
     </section>
 
     <!-- ===== SECCIÓN: CONTACTO ===== -->

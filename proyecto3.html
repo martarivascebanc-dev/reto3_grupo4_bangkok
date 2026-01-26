@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         /* Reseteo básico para que no haya márgenes raros */
-        * { 
-            margin: 0; 
-            padding: 0; 
-            box-sizing: border-box; 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
 
         body {
             font-family: Arial, sans-serif;
@@ -18,6 +19,7 @@
             color: #333;
             line-height: 1.6;
         }
+
 
         /* Cabecera de la página */
         header {
@@ -27,12 +29,14 @@
             text-align: center;
         }
 
+
         header h1 {
             font-size: 2em;
             margin-bottom: 10px;
         }
 
-        /* Logo de la empresa Generado con IA*/
+
+        /* Logo de la empresa */
         .logo {
             max-width: 300px;
             width: 100%;
@@ -41,12 +45,14 @@
             filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
         }
 
+
         /* Menú de navegación */
         nav {
             background-color: #34495e;
             padding: 10px;
             text-align: center;
         }
+
 
         nav a {
             color: white;
@@ -55,9 +61,11 @@
             font-weight: bold;
         }
 
+
         nav a:hover {
             color: #f39c12;
         }
+
 
         /* Contenedor para centrar todo */
         .container {
@@ -65,6 +73,7 @@
             margin: 30px auto;
             padding: 0 20px;
         }
+
 
         /* Cada sección de la página */
         section {
@@ -75,6 +84,7 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
+
         section h2 {
             color: #2c3e50;
             margin-bottom: 15px;
@@ -82,20 +92,24 @@
             padding-bottom: 8px;
         }
 
+
         section p {
             margin-bottom: 12px;
         }
+
 
         ul {
             margin-left: 25px;
             margin-top: 10px;
         }
 
+
         ul li {
             margin-bottom: 8px;
         }
 
-        /* Caja donde van las piezas animadas Generado con IA */
+
+        /* Caja donde van las piezas animadas */
         .animacion-piezas {
             background-color: #3498db;
             height: 150px;
@@ -107,7 +121,8 @@
             margin: 20px 0;
         }
 
-        /* Estilo de cada pieza (círculos naranjas) Generado con IA*/
+
+        /* Estilo de cada pieza (círculos naranjas) */
         .pieza {
             width: 50px;
             height: 50px;
@@ -120,11 +135,13 @@
             animation: girar 2s infinite linear;
         }
 
-        /* Animación para que las piezas giren Generado con IA */
+
+        /* Animación para que las piezas giren */
         @keyframes girar {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
+
 
         /* Campos del formulario */
         form input, form textarea {
@@ -136,11 +153,13 @@
             font-size: 1em;
         }
 
+
         form label {
             font-weight: bold;
             display: block;
             margin-top: 10px;
         }
+
 
         /* Botón de enviar */
         button {
@@ -154,9 +173,11 @@
             font-size: 1em;
         }
 
+
         button:hover {
             background-color: #e67e22;
         }
+
 
         /* Mensaje que aparece cuando envías el formulario */
         .mensaje-exito {
@@ -168,6 +189,7 @@
             display: none;
         }
 
+
         footer {
             background-color: #2c3e50;
             color: white;
@@ -175,6 +197,7 @@
             padding: 20px;
             margin-top: 30px;
         }
+
 
         /* === ANIMACIÓN DEL COCHE === */
         .factory {
@@ -185,6 +208,7 @@
             overflow: hidden;
             margin: 20px 0;
         }
+
 
         .car {
             position: absolute;
@@ -197,6 +221,7 @@
             transition: all 0.8s ease;
         }
 
+
         .wheel {
             width: 40px;
             height: 40px;
@@ -208,8 +233,10 @@
             transition: opacity 0.5s ease;
         }
 
+
         .wheel.front { left: 30px; }
         .wheel.back { right: 30px; }
+
 
         .window {
             width: 60px;
@@ -223,6 +250,7 @@
             transition: opacity 0.5s ease;
         }
 
+
         .spoiler {
             width: 50px;
             height: 10px;
@@ -234,6 +262,7 @@
             transition: opacity 0.5s ease;
         }
 
+
         /* Caja destacada para el concurso */
         .caja-destacada {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -244,12 +273,14 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
+
         .caja-destacada h3 {
             color: #fff;
             border-bottom: 2px solid rgba(255,255,255,0.3);
             padding-bottom: 8px;
             margin-bottom: 15px;
         }
+
 
         /* Ajustes para móviles */
         @media (max-width: 768px) {
@@ -261,12 +292,14 @@
 </head>
 <body>
 
+
 <!-- ===== CABECERA ===== -->
 <header>
     <img src="C:\Users\marko\Documents\web 101\25\ChatGPT Image 22 ene 2026, 10_47_07.png" alt="Logo" class="logo">
     <h1>Fabricados López</h1>
     <p>Sistema de Trazabilidad de Piezas</p>
 </header>
+
 
 <!-- ===== MENÚ ===== -->
 <nav>
@@ -282,22 +315,25 @@
     <a href="#contacto">Contact</a>
 </nav>
 
+
 <!-- ===== CONTENIDO PRINCIPAL ===== -->
 <div class="container">
+
 
     <!-- ===== SECCIÓN: PROYECTO ===== -->
     <section id="proyecto">
         <h2>El Proyecto</h2>
-        
+       
         <p>
-            Este proyecto es un sistema para llevar control de las piezas que se fabrican 
+            Este proyecto es un sistema para llevar control de las piezas que se fabrican
             en la empresa Fabricados López.
         </p>
-        
+       
         <p>
-            Antes todo se apuntaba en papel, lo que hacía difícil encontrar información. 
+            Antes todo se apuntaba en papel, lo que hacía difícil encontrar información.
             Ahora tenemos un programa en Python que guarda todo de forma ordenada.
         </p>
+
 
         <h3>Que resuelve?</h3>
         <ul>
@@ -308,13 +344,15 @@
         </ul>
     </section>
 
+
     <!-- ===== SECCIÓN: FUNCIONAMIENTO ===== -->
     <section id="funcionamiento">
         <h2>Como Funciona</h2>
-        
+       
         <p>
             Es un programa de consola muy simple en Python. Tiene tres funciones principales:
         </p>
+
 
         <h3>Funciones:</h3>
         <ul>
@@ -322,6 +360,7 @@
             <li><strong>Ver todas las piezas:</strong> Muestra una lista completa</li>
             <li><strong>Buscar por ID:</strong> Busca una pieza concreta por su código</li>
         </ul>
+
 
         <h3>Tecnología:</h3>
         <ul>
@@ -331,12 +370,14 @@
         </ul>
     </section>
 
+
     <section id="digitalizacion">
         <h2>El paso del papel a lo digital</h2>
-        
+       
         <p>
             Mediante este proyecto lo que buscamos es sustituir el uso de papel por herramientas digitales.
         </p>
+
 
         <h3>¿En que se basa el sistema?</h3>
         <ul>
@@ -345,12 +386,14 @@
         </ul>
     </section>
 
+
     <section id="sostenibilidad">
         <h2>Tecnología al servicio del planeta</h2>
-        
+       
         <p>
             El proyecto de Fabricados López integra la sostenibilidad de forma transversal, alineandose con los Objetivos Desarrollo Sostenible de la Agenda 2030.
         </p>
+
 
         <h3>Ventajas de la prodducción responsable</h3>
         <ul>
@@ -360,12 +403,15 @@
     </section>
 
 
+
+
     <section id="basesdedatos">
         <h2>Nuestro modelo de entidad relacion</h2>
-        
+       
         <p>
             Es una base de datos diseñada que permite organizar y gestionar la información de nuestra fábrica de automóviles de forma estructurada.
         </p>
+
 
         <h3>Modelo:</h3>
         <ul>
@@ -374,18 +420,21 @@
             <li><strong>Conclucion:</strong> Esta base de datos permite realizar un seguimiento completo del proceso productivo, facilitando la trazabilidad de cada coche, el control del montaje, la gestión personal y la supervisión de la calidad.</li>
         </ul>
 
+
         <h3>Nuestra base de datos</h3>
         <ul>
-            <img src="C:\Users\marko\Documents\web 101\25\image.png" alt="" width="300" height="300"> 
+            <img src="C:\Users\marko\Documents\web 101\25\image.png" alt="" width="300" height="300">
         </ul>
     </section>
 
+
     <section id="kahoot">
         <h2>Kahoot preguntas empleabilidad</h2>
-        
+       
         <p>
-            Es un Kahoot de preguntas sobre empleabilidad. 
+            Es un Kahoot de preguntas sobre empleabilidad.
         </p>
+
 
         <h3>Temas:</h3>
         <ul>
@@ -395,20 +444,23 @@
             <li><strong>Prestaciones de la Seguridad Social:</strong> Se introducen preguntas sobre las prestaciones de la Seguridad Social.</li>
         </ul>
 
+
         <h3>Link del Kahoot:</h3>
         <ul>
             <a href="https://create.kahoot.it/share/preguntas-empleabilidad/b761058b-0657-411a-8b8d-0a99dca46c2d">Kahoot</a>
         </ul>
     </section>
 
+
     <!-- ===== SECCIÓN: ANIMACIÓN ===== -->
     <section id="animacion">
         <h2>Animación de Piezas</h2>
-        
+       
         <p>
-            Estas piezas representan el trabajo en la fábrica. 
+            Estas piezas representan el trabajo en la fábrica.
             Giran continuamente como si estuvieran en producción.
         </p>
+
 
         <!-- Aquí van las piezas animadas -->
         <div class="animacion-piezas">
@@ -419,13 +471,15 @@
         </div>
     </section>
 
+
     <!-- ===== SECCIÓN: ANIMACIÓN DEL COCHE ===== -->
     <section id="animacion-coche">
         <h2>🚗 Proceso de Fabricación</h2>
-        
+       
         <p>
             Observa cómo se ensambla un coche paso a paso en nuestra línea de producción.
         </p>
+
 
         <!-- Fábrica con el coche -->
         <div class="factory">
@@ -437,6 +491,7 @@
             </div>
         </div>
 
+
         <!-- Botones de control -->
         <div style="text-align: center; margin-top: 15px;">
             <button onclick="addWheels()">Añadir ruedas</button>
@@ -446,13 +501,15 @@
         </div>
     </section>
 
+
     <!-- ===== SECCIÓN: CONCURSO DE ANIMACIONES ===== -->
     <section id="concurso">
         <h2>🏆 Concurso de Animaciones</h2>
-        
+       
         <p>
             Como parte de nuestro proyecto, participamos en un concurso de animaciones web donde cada miembro del equipo tenía que desarrollar una propuesta creativa que representara algún aspecto de la industria manufacturera.
         </p>
+
 
         <div class="caja-destacada">
             <h3>🎨 Nuestra Propuesta Ganadora</h3>
@@ -461,67 +518,82 @@
             </p>
         </div>
 
+
         <h3>¿Por qué elegimos esta animación?</h3>
         <ul>
             <li><strong>Representación visual clara:</strong> La animación muestra de forma sencilla y visual el proceso de ensamblaje de un vehículo, algo que cualquier persona puede entender de inmediato.</li>
-            
+           
             <li><strong>Interactividad:</strong> A diferencia de una animación pasiva, esta permite al usuario participar activamente en el proceso de fabricación mediante botones interactivos, lo que hace la experiencia más educativa y entretenida.</li>
-            
+           
             <li><strong>Conexión con nuestro proyecto:</strong> Se alinea perfectamente con el objetivo principal de Fabricados López, que es la trazabilidad y control de piezas en procesos industriales. Cada paso de la animación representa una fase del proceso productivo que necesita ser registrada y controlada.</li>
-            
+           
             <li><strong>Simplicidad técnica y elegancia:</strong> La animación utiliza CSS y JavaScript de forma eficiente, demostrando que no hace falta complicar demasiado las cosas para crear algo efectivo y atractivo.</li>
-            
+           
             <li><strong>Valor educativo:</strong> Sirve como herramienta didáctica para explicar conceptos de manufactura secuencial y ensamblaje por etapas, algo fundamental en la industria automotriz.</li>
         </ul>
+
 
         <h3>El autor</h3>
         <p>
             Esta animación fue desarrollada por uno de los integrantes de nuestro equipo, quien demostró creatividad y habilidades técnicas al combinar HTML, CSS y JavaScript para crear una experiencia visual interactiva que representa fielmente los valores de nuestra empresa.
         </p>
 
+
         <p style="margin-top: 20px; font-style: italic; color: #555;">
             La animación ha sido muy bien recibida por su capacidad de transmitir conceptos complejos de fabricación de una manera accesible y visual, además de reflejar el espíritu innovador y tecnológico de Fabricados López.
         </p>
     </section>
 
+
     <!-- ===== SECCIÓN: CONTACTO ===== -->
     <section id="contacto">
         <h2>Contact</h2>
-        
+       
         <p>If you have any questions about the project, fill out this form:</p>
+
 
         <form id="formulario">
             <label>Name:</label>
             <input type="text" id="nombre" placeholder="Your name" required>
 
+
             <label>Email:</label>
             <input type="email" id="email" placeholder="your@gmail.com" required>
+
 
             <label>Message:</label>
             <textarea id="mensaje" rows="4" placeholder="Write your message here..." required></textarea>
 
-            <button type="button" onclick="enviar()">Send Message</button>
+
+            <button type="button" onclick="enviar()">Send Message</button><br>
+            <a href="https://www.canva.com/design/DAG_gfpupkA/tA8TrFyf5du6bqKbISY3KA/edit?utm_content=DAG_gfpupkA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Podcast</a>
         </form>
-        
+       
         <!-- Mensaje que aparece al enviar -->
         <div id="confirmacion" class="mensaje-exito"></div>
+
     </section>
 
+
 </div>
+
 
 <!-- ===== PIE DE PÁGINA ===== -->
 <footer>
     <p>© 2024 Fabricados López</p>
 </footer>
 
+
 <script>
     // ===== ANIMACIÓN DEL COCHE =====
     let position = 0;
+
 
     function moveCar() {
         position += 60;
         document.getElementById('car').style.left = position + 'px';
     }
+
 
     function addWheels() {
         document.getElementById('wheel1').style.opacity = 1;
@@ -529,15 +601,18 @@
         moveCar();
     }
 
+
     function addWindow() {
         document.getElementById('window').style.opacity = 1;
         moveCar();
     }
 
+
     function addSpoiler() {
         document.getElementById('spoiler').style.opacity = 1;
         moveCar();
     }
+
 
     function resetCar() {
         position = 0;
@@ -548,6 +623,7 @@
         document.getElementById('spoiler').style.opacity = 0;
     }
 
+
     // ===== FORMULARIO DE CONTACTO =====
     // Función que se ejecuta cuando pulsas el botón de enviar
     function enviar() {
@@ -555,21 +631,22 @@
         const nombre = document.getElementById('nombre').value;
         const email = document.getElementById('email').value;
         const mensaje = document.getElementById('mensaje').value;
-        
+       
         // Si falta algo, mostramos un aviso
         if (!nombre || !email || !mensaje) {
             alert('Please fill in all fields');
             return;
         }
-        
+       
         // Mostramos el mensaje de que se ha enviado
         const confirmacion = document.getElementById('confirmacion');
         confirmacion.style.display = 'block';
         confirmacion.innerHTML = '<strong>✓ Message sent successfully</strong><br>Thank you ' + nombre + ', we will reply soon.';
-        
+       
         // Borramos lo que había escrito en el formulario
         document.getElementById('formulario').reset();
     }
+
 
     // ===== NAVEGACIÓN SUAVE =====
     // Cuando haces clic en el menú, la página baja suavemente
@@ -582,5 +659,7 @@
     });
 </script>
 
+
 </body>
 </html>
+

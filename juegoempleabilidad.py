@@ -1,5 +1,5 @@
 import time
-
+#
 preguntas = [
     {
         "pregunta": "¿Qué es la ITSS?",

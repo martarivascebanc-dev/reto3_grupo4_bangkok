@@ -1,5 +1,5 @@
 import time
-
+#las preguntas las han creado Marko y Marta
 preguntas = [
     {
         "pregunta": "¿Qué es la ITSS?",
@@ -289,7 +289,7 @@ preguntas = [
         "correcta": 0
     }
 
-
+#hecho con IA
 def jugar():
     print("🎮 BIENVENIDO AL KAHOOT DE SEGURIDAD SOCIAL 🎮\n")
     nombre = input("Introduce tu nombre: ")
@@ -333,3 +333,5 @@ def jugar():
 
 if __name__ == "__main__":
     jugar()
+
+#Hecho con IA

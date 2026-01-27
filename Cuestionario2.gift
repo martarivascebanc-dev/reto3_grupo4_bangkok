@@ -1,0 +1,20 @@
+5.1- ¿Cuál es la característica de un lenguaje de programación por la que es posible definir varios métodos para la misma clase con el mismo nombre, pero diferente número y/o tipo de parámetros y/o tipo de valor devuelto? {
+    =Poliformismo.
+    ~Modularidad.
+    ~Encapsulamiento.
+    ~Ocultamiento
+}
+
+5.2- ¿Cuál de las siguiente características no es imprescindible para que un lenguaje de progamación se pueda considerar orientado a objetos? {
+    ~Herencia.
+    ~Abstracción
+    =Recolección de basura.
+    ~Polimorfismo.
+}
+
+5.3- La siguiente definición se corresponde con un componente estructural de UML, ¿de qué elemento se trata? Es un elemento físico que existe en tiempo de ejecucción y representa un recurso computacional que, por lo general, dispone de algo de memoria y, con frecuencia, capacidad de procesamiento. {
+    =Nodo.
+    ~Artefacto.
+    ~Componente.
+    ~Caso de uso
+}

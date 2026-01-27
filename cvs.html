@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <style>
+    .form-group { margin-bottom: 5px; }
+    label { display: block; margin-bottom: 5px; }
+    input, select, textarea { width: 300px; padding: 5px; }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 30px 40px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        width: 350px;
+    }
+    
+    button {
+        margin-top: 10px;
+        padding: 10px;
+        width: 100%;
+        background-color: #0011ff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="navbar">
+            <a href="#home">Inicio</a>
+        
+            <div class="dropdown">
+                <button class="dropbtn">Cv´s
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#SubirCV">Subir CV</a>
+                    <a href="#FormularioCV">Formulario guiado</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Objetivo sostenible
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#Sostenibilidad">Sostenibilidad</a>
+                    <a href="#Digitalizacion">Digitalización</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Administrador
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#ER">Modelo ER</a>
+                    <a href="#Añadir">Añadir empleados</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <form action=""> 
+        <label for="nombre" >¿Cuál es tu nombre? </label>
+        <input type="text" name="nombre" id="nombre">
+
+        <div class="form-group"></div>
+        <label for="edad">¿Cuántos años tienes?</label>
+        <input type="number" name="edad" id="edad">
+
+        <div class="form-group"></div>
+        <label for="idiomas">¿Cuántos idiomas sabes? </label>
+        <input type="number" name="idiomas" id="idiomas">
+
+        <div class="form-group"></div>
+        <label for="experiencia laboral">¿Tienes experiencia laboral?</label>
+        <select name="experiencia laboral" id="experiencia laboral">
+            <option value="">---Selecciona---</option>
+            <option value="si">Si</option>
+            <option value="no">No</option>
+        </select>
+
+        <div class="form-group"></div>
+        <label for="experiencia laboral">Si tienes experiencia laboral, ¿cuál es?</label>
+        <input type="text" name="experiencia laboral" id="experiencia laboral">
+
+        <div class="form-group"></div>
+        <label for="experiencia laboral">¿Cuántos años de experiencia tienes?</label>
+        <input type="number" name="experiencia laboral" id="experiencia laboral">
+
+        <div class="form-group"></div>
+        <label for="datos académicos">¿Donde has estudiado?</label>
+        <input type="datos académicos" name="datos académicos" id="datos académicos">
+
+        <div class="form-group"></div>
+        <label for="datos académicos">¿Cuál es tu último título?</label>
+        <select name="datos académicos" id="datos académicos">
+            <option value="">---Selecciona---</option>
+            <option value="eso">ESO</option>
+            <option value="bachillerato">Bachillerato</option>
+            <option value="universidad">Universidad</option>
+            <option value="grado medio">Grado medio</option>
+            <option value="grado superior">Grado superior</option>
+        </select>
+
+        <div class="form-group"></div>
+        <label for="telefono">Pon tu teléfono aquí: </label>
+        <input type="text" name="telefono" id="telefono">
+
+        <div class="form-group"></div>
+        <label for="correo electrónico">Pon tu correo electrónico aquí: </label>
+        <input type="text" name="correo electrónico" id="correo electrónico">
+
+        <div class="form-group"></div>
+        <label for="vivienda">¿Donde vives?</label>
+        <input type="text" name="vivienda" id="vivienda">
+
+        <div>
+            <button type="submit">Enviar tu CV</button>
+        </div>
+    </form>
+
+    <script>
+        function valideteFeedback () {
+            const name = document.getElementById("fullname").value;
+            const agree = document.getElementById("agree").checked;
+
+    if (name === "") {
+        alert("Por favor pon tu nombre");
+        return false;
+    }
+
+    alert("¡Gracias por tu respuesta!");
+    return true;
+}
+
+    </script>
+    
+    <footer>
+
+        <div id="redes">
+            <p>Nuestras redes sociales: </p>
+            <a href="#github"><i class="fa-brands fa-github"></i>  Github</a>
+            <a href="#instagram"><i class="fa-brands fa-instagram">  Instagram</i></a>
+            <a href="#youtube"><i class="fa-brands fa-youtube"></i>  Youtube</a>
+        </div>
+
+
+        <div id="copi">
+            <p><i class="fa-regular fa-copyright"></i> Copyright desde 2025</p>
+        </div>
+
+
+        <div id="direccion">
+            <p>Nuestra direccion:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2684.185539470635!2d-2.0194739885572632!3d43.304691171000314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51b0708baa02bb%3A0x4b55a087d653821b!2sCebanc!5e1!3m2!1ses!2ses!4v1762850564557!5m2!1ses!2ses" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </footer>
+
+</body>
+</html>

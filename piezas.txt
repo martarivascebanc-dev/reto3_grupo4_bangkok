@@ -1,0 +1,12 @@
+Motor
+
+Carburador
+Distribuidor
+Bujías
+Radiador
+Caja de cambios manual
+Embrague
+Chasis
+Puerta
+Airbag
+Ruedas

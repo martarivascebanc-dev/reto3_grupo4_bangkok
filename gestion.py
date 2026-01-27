@@ -2,6 +2,7 @@ import csv
 from datetime import date
 import os
 
+
 archivo = 'inventario.csv'
 
 # Crear archivo si no existe

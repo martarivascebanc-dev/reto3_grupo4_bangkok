@@ -1,3 +1,4 @@
+#Marta, Marko y Andoni
 import time
 
 preguntas = [

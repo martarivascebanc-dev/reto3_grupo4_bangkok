@@ -1,3 +1,5 @@
+#Marko
+
 import random
 
 #en un archivo guarda el stock de todas las piezas de los coches

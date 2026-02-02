@@ -11,3 +11,5 @@ with open ("listado.txt", "w") as archivo:
         archivo.write(f"{pieza} = {cantidad}\n")
 
 print("Archivo 'listado.txt' creado correctamente.")
+
+#marko
